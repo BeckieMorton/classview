@@ -9,8 +9,8 @@ export const SimpleDashboard = () => {
   return (
     <>
       <div className={styles.simpleContainer}>
-        <h1>Simple Dashboard</h1>
         <TimeDayDate />
+        <h1>Simple Dashboard</h1>
         <Button routeLocation={""} textGoesHere={"Home"} />
       </div>
       <ControlBar />

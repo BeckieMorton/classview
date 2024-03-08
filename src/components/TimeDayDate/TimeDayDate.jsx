@@ -1,5 +1,6 @@
-import React from "react";
 import moment from "moment";
+
+import styles from "./TimeDayDate.module.css";
 
 export const TimeDayDate = () => {
   const dateinfo =
@@ -8,9 +9,8 @@ export const TimeDayDate = () => {
   console.log(dateinfo);
 
   return (
-    <div>
-      <h1>TimeDayDate</h1>
-      <p>{dateinfo}</p>
+    <div className={styles.dateContainer}>
+      <h1>{dateinfo}</h1>
     </div>
   );
 };
