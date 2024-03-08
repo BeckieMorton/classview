@@ -2,9 +2,9 @@ import styles from "./Copyright.module.css";
 
 export const Copyright = () => {
   return (
-    <div className={styles.container}>
+    <div className={styles.copyrightContainer}>
       <p>
-        © 2024 Webseite von
+        © 2024 Created by
         <a href="https://beckiemorton-portfolio.netlify.app/"> B.M.</a>
       </p>
     </div>

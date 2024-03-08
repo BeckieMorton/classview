@@ -1,0 +1,13 @@
+.detailedContainer {
+  text-align: center;
+  align-items: center;
+  color: black;
+  background-color: white;
+  margin: 1em;
+  padding: 2em;
+  border-radius: 10px;
+}
+
+.heading {
+  font-size: 90px;
+}

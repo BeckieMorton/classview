@@ -1,0 +1,31 @@
+.container {
+  text-align: center;
+}
+
+.container a {
+  text-decoration: none;
+}
+
+/* .container a:hover {
+  background-color: #ffb500;
+  color: white;
+} */
+
+.homeLink {
+  background-color: white;
+  padding: 6px;
+  border-radius: 5px;
+  border: 2px solid #ffb500;
+}
+
+.container span {
+  display: inline-block;
+  transition: transform 0.3s ease-in-out;
+}
+
+.container span:hover {
+  transform: scale(1.2);
+
+  background-color: #ffb500;
+  color: white;
+}
