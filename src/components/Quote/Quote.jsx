@@ -28,8 +28,14 @@ export const Quote = () => {
   return (
     <div>
       <p>Quote</p>
-      <p>{dayQuote[0].content}</p>
-      <p>{dayQuote[0].author}</p>
+      {dayQuote ? (
+        <div>
+          <p>{dayQuote[0].content}</p>
+          <p>{dayQuote[0].author}</p>
+        </div>
+      ) : (
+        <p>No quote available</p>
+      )}
     </div>
   );
 };
