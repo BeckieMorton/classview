@@ -1,5 +1,6 @@
 .container {
   text-align: left;
+  display: flex;
 }
 
 .container a {
@@ -16,16 +17,16 @@
   background-color: #457992;
   padding: 10px 20px;
   border-radius: 20px;
+  display: inline-block;
+  margin-right: 10px;
 }
 
 .container span {
-  display: inline-block;
   transition: transform 0.3s ease-in-out;
 }
 
 .container span:hover {
   transform: scale(1.2);
-
   background-color: #ffb500;
   color: white;
 }

@@ -1,4 +1,5 @@
 import { Button } from "../../components/UI/Button/Button";
+import { LottieComponent } from "../LottieComponent/LottieComponent";
 
 import styles from "./Landing.module.css";
 
@@ -32,7 +33,9 @@ export const Landing = () => {
           textGoesHere={"CREATE your own lesson"}
         />
       </div>
-      <div className={styles.landingBox}>image here</div>
+      <div className={styles.landingBox}>
+        <LottieComponent />
+      </div>
     </div>
   );
 };

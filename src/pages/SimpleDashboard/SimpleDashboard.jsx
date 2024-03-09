@@ -11,7 +11,6 @@ export const SimpleDashboard = () => {
       <div className={styles.simpleContainer}>
         <TimeDayDate />
         <h1>Simple Dashboard</h1>
-        <Button routeLocation={""} textGoesHere={"Home"} />
       </div>
       <ControlBar />
     </>

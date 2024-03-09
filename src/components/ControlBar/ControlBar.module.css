@@ -7,3 +7,21 @@
   padding: 1em;
   border-radius: 10px;
 }
+
+.controlContainer a {
+  text-decoration: none;
+  color: white;
+}
+.controlContainer span {
+  transition: transform 0.3s ease-in-out;
+  background-color: #457992;
+  padding: 6px 15px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.controlContainer span:hover {
+  transform: scale(1.2);
+  background-color: #ffb500;
+  color: white;
+}
