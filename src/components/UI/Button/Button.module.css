@@ -1,9 +1,10 @@
 .container {
-  text-align: center;
+  text-align: left;
 }
 
 .container a {
   text-decoration: none;
+  color: white;
 }
 
 /* .container a:hover {
@@ -12,10 +13,9 @@
 } */
 
 .homeLink {
-  background-color: white;
-  padding: 6px;
-  border-radius: 5px;
-  border: 2px solid #ffb500;
+  background-color: #457992;
+  padding: 10px 20px;
+  border-radius: 20px;
 }
 
 .container span {

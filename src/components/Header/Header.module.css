@@ -2,8 +2,7 @@
   text-align: center;
   align-items: center;
   color: black;
-  background-color: white;
-  margin: 1em;
-  padding: 0.5em;
+  /* background-color: white; */
+  margin: 0.5em;
   border-radius: 10px;
 }

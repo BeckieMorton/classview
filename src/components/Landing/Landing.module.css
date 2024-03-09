@@ -1,13 +1,25 @@
 .landingContainer {
-  text-align: center;
-  align-items: center;
-  color: black;
+  text-align: left;
+  align-items: left;
+  color: #20272c;
   background-color: white;
   margin: 1em;
-  padding: 1em 2em;
+  padding: 6em 8em;
   border-radius: 10px;
+  display: grid;
+  grid-template-columns: 60% 40%;
 }
 
 .heading {
-  font-size: 90px;
+  font-size: 80px;
+}
+
+.blurb {
+  font-size: 60px;
+  line-height: 1.2;
+}
+
+.smallBlurb {
+  font-size: 20px;
+  line-height: 1.2;
 }
