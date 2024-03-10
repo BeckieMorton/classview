@@ -9,8 +9,7 @@ export const EyfsDashboard = () => {
     <>
       <div className={styles.eyfsContainer}>
         <p>
-          Today is
-          <TimeDayDate />
+          <TimeDayDate eyfs={"true"} />
         </p>
         <h1>EYFS Dashboard</h1>
         <p>
@@ -18,7 +17,6 @@ export const EyfsDashboard = () => {
           pictures, numbers, words, shapes etc, perhaps lottie animations for
           numbers?
         </p>
-        <Button routeLocation={""} textGoesHere={"Home"} />
       </div>
       <ControlBar />
     </>

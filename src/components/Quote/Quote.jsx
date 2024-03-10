@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 
 export const Quote = () => {
-  const [loading, setLoading] = useState(true);
   const [dayQuote, setDayQuote] = useState("");
   const QuoteoftheDayAPI = "https://api.quotable.io/quotes/random";
 

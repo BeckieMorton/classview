@@ -12,11 +12,11 @@ export const DetailedDashboard = () => {
         <TimeDayDate />
         <h1>Detailed Dashboard</h1>
         <p>
-          {/* <Quote /> */}
           <Weather />
           map, quote, weather? calendar, trait of the day? idiom of the day??
           quote of the day? on this day?
         </p>
+        <Quote />
       </div>
       <ControlBar />
     </>
