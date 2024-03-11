@@ -3,7 +3,7 @@ import rain from "../../assets/animations/rain.json";
 
 export const RainAnimation = () => {
   const style = {
-    height: 200,
+    height: 150,
   };
 
   return (

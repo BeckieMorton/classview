@@ -3,7 +3,7 @@ import snow from "../../assets/animations/snow.json";
 
 export const SnowAnimation = () => {
   const style = {
-    height: 200,
+    height: 150,
   };
 
   return (

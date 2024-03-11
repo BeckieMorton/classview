@@ -1,6 +1,7 @@
 .clock {
-  font-size: 26px;
+  font-size: 46px;
   color: orange;
-  padding: 0;
+  padding: 0 1em;
   border: 1px solid grey;
+  margin: 0;
 }

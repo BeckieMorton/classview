@@ -3,7 +3,7 @@ import clear from "../../assets/animations/clear.json";
 
 export const ClearAnimation = () => {
   const style = {
-    height: 200,
+    height: 150,
   };
 
   return (

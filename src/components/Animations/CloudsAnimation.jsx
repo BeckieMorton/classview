@@ -3,7 +3,7 @@ import clouds from "../../assets/animations/clouds.json";
 
 export const CloudsAnimation = () => {
   const style = {
-    height: 200,
+    height: 150,
   };
 
   return (

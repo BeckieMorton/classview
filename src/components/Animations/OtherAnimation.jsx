@@ -3,7 +3,7 @@ import other from "../../assets/animations/other.json";
 
 export const OtherAnimation = () => {
   const style = {
-    height: 200,
+    height: 150,
   };
 
   return (

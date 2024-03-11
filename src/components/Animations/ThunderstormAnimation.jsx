@@ -3,7 +3,7 @@ import thunderstorm from "../../assets/animations/thunderstorm.json";
 
 export const ThunderstormAnimation = () => {
   const style = {
-    height: 200,
+    height: 150,
   };
 
   return (
