@@ -1,4 +1,5 @@
 import { ControlBar } from "../../components/ControlBar/ControlBar";
+import { MyClock } from "../../components/MyClock/MyClock";
 import { Quote } from "../../components/Quote/Quote";
 import { TimeDayDate } from "../../components/TimeDayDate/TimeDayDate";
 import { Weather } from "../../components/Weather/Weather";
@@ -9,14 +10,26 @@ export const DetailedDashboard = () => {
   return (
     <>
       <div className={styles.detailedContainer}>
-        <TimeDayDate />
-        <h1>Detailed Dashboard</h1>
-        <p>
+        <div className={styles.detailedBox}>
+          <TimeDayDate />
+        </div>
+        <div className={styles.detailedBox}>
+          <h1>Detailed Dashboard</h1>
+        </div>
+        <div className={styles.detailedBox}>
           <Weather />
+        </div>
+        <div className={styles.detailedBox}>
+          <MyClock />
+        </div>
+        <div className={styles.detailedBox}>
           map, quote, weather? calendar, trait of the day? idiom of the day??
           quote of the day? on this day?
-        </p>
-        <Quote />
+        </div>
+        <div className={styles.detailedBox}>
+          <Quote />
+        </div>
+        <div className={styles.detailedBox}>something to go here?</div>
       </div>
       <ControlBar />
     </>

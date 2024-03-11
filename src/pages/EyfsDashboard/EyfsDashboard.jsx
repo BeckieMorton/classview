@@ -15,7 +15,7 @@ export const EyfsDashboard = () => {
         <p>
           Simple - EYFS - simple/clean desktop display for the day includes
           pictures, numbers, words, shapes etc, perhaps lottie animations for
-          numbers?
+          numbers? feelings????
         </p>
       </div>
       <ControlBar />

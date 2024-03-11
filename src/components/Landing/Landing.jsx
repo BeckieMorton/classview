@@ -1,5 +1,5 @@
 import { Button } from "../../components/UI/Button/Button";
-import { LottieComponent } from "../LottieComponent/LottieComponent";
+import { BookAnimation } from "../Animations/BookAnimation";
 
 import styles from "./Landing.module.css";
 
@@ -34,7 +34,7 @@ export const Landing = () => {
         />
       </div>
       <div className={styles.landingBox}>
-        <LottieComponent />
+        <BookAnimation />
       </div>
     </div>
   );

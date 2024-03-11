@@ -1,5 +1,12 @@
 import { useState, useEffect } from "react";
 
+import { CloudsAnimation } from "../Animations/CloudsAnimation";
+import { ClearAnimation } from "../Animations/ClearAnimation";
+import { SnowAnimation } from "../Animations/SnowAnimation";
+import { ThunderstormAnimation } from "../Animations/ThunderstormAnimation";
+import { RainAnimation } from "../Animations/RainAnimation";
+import { OtherAnimation } from "../Animations/OtherAnimation";
+
 export const Weather = () => {
   const [userLat, setUserLat] = useState("");
   const [userLong, setUserLong] = useState("");
@@ -75,37 +82,33 @@ export const Weather = () => {
 
   switch (weatherMain) {
     case "Clouds":
-      weatherImage = "/assets/weather-clouds.png";
+      weatherImage = <CloudsAnimation />;
       break;
     case "Clear":
-      weatherImage = "/assets/weather-clear.png";
+      weatherImage = <ClearAnimation />;
       break;
     case "Snow":
-      weatherImage = "/assets/weather-snow.png";
+      weatherImage = <SnowAnimation />;
       break;
     case "Rain":
     case "Drizzle":
-      weatherImage = "/assets/weather-rain.png";
+      weatherImage = <RainAnimation />;
       break;
     case "Thunderstorm":
-      weatherImage = "/assets/weather-thunderstorm.png";
+      weatherImage = <ThunderstormAnimation />;
       break;
     default:
       //case for Mist, Smoke, Haze, Dust, Fog, Sand, Dust, Ash, Squall, Tornado
-      weatherImage = "/assets/weather-other.png";
+      weatherImage = <OtherAnimation />;
       break;
   }
 
   return (
     <div>
-      <p>Weather component here</p>
-      <div>
-        <img src={weatherImage} />
-      </div>
+      <div>{weatherImage}</div>
       <h2>{currentTemp}°C</h2>
       <p>Feels like: {currentFeelsLike}</p>
-      <h2>{weatherMain}</h2>
-      <p>{weatherDesc}</p>
+      <h2>{weatherDesc}</h2>
     </div>
   );
 };

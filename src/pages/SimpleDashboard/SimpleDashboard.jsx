@@ -4,6 +4,7 @@ import { TimeDayDate } from "../../components/TimeDayDate/TimeDayDate";
 
 import styles from "./SimpleDashboard.module.css";
 import { ControlBar } from "../../components/ControlBar/ControlBar";
+import { MyClock } from "../../components/MyClock/MyClock";
 
 export const SimpleDashboard = () => {
   return (
@@ -11,6 +12,8 @@ export const SimpleDashboard = () => {
       <div className={styles.simpleContainer}>
         <TimeDayDate />
         <h1>Simple Dashboard</h1>
+        <p>The my clock component is below:</p>
+        <MyClock />
       </div>
       <ControlBar />
     </>

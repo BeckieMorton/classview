@@ -7,8 +7,20 @@
   padding: 1em;
   border-radius: 10px;
   height: calc(95vh - 5em);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1em; /* Add gap between grid items */
 }
 
-.heading {
-  font-size: 90px;
+.detailedBox {
+  border: 1px solid red;
+  height: 100%; /* Ensure grid items fill the entire height of their container */
+}
+
+.detailedContainer > :first-child {
+  grid-column: 1 / span 3;
+}
+
+.detailedContainer > :nth-child(3n) {
+  margin-right: 0; /* Remove right margin for every third item */
 }

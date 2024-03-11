@@ -1,15 +1,13 @@
 import Lottie from "lottie-react";
 import book from "../../assets/animations/book.json";
 
-import styles from "./LottieComponent.module.css";
-
-export const LottieComponent = () => {
+export const BookAnimation = () => {
   const style = {
     height: 200,
   };
 
   return (
-    <div className={styles.animationContainer}>
+    <div>
       <Lottie animationData={book} style={style} />
     </div>
   );
