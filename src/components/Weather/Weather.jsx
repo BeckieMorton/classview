@@ -7,7 +7,7 @@ import { ThunderstormAnimation } from "../Animations/ThunderstormAnimation";
 import { RainAnimation } from "../Animations/RainAnimation";
 import { OtherAnimation } from "../Animations/OtherAnimation";
 
-export const Weather = () => {
+export const Weather = ({ eyfs }) => {
   const [userLat, setUserLat] = useState("");
   const [userLong, setUserLong] = useState("");
   const BASE_URL = "https://api.openweathermap.org/data/2.5/weather";
@@ -102,10 +102,19 @@ export const Weather = () => {
 
   return (
     <div>
-      <div>{weatherImage}</div>
-      <h2>{currentTemp}°C</h2>
-      <p>Feels like: {currentFeelsLike}</p>
-      <h2>{weatherDesc}</h2>
+      {eyfs ? (
+        <div>
+          <p>The weather is</p>
+          <p>{weatherImage}</p>
+        </div>
+      ) : (
+        <div>
+          <p>{weatherImage}</p>
+          <h2>{currentTemp}°C</h2>
+          <p>Feels like: {currentFeelsLike}</p>
+          <h2>{weatherDesc}</h2>
+        </div>
+      )}
     </div>
   );
 };

@@ -12,6 +12,11 @@
   grid-gap: 0.5em;
 }
 
+.eyfsBox h1 {
+  margin: 0;
+  padding: 0;
+}
+
 .eyfsBox {
   border: 1px solid red;
   height: 100%; /* Ensure grid items fill the entire height of their container */

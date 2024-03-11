@@ -7,6 +7,7 @@ import { Weather } from "../../components/Weather/Weather";
 import { NewsFeed } from "../../components/NewsFeed/NewsFeed";
 
 import styles from "./DetailedDashboard.module.css";
+import { OnThisDay } from "../../components/OnThisDay/OnThisDay";
 
 export const DetailedDashboard = () => {
   return (
@@ -18,9 +19,7 @@ export const DetailedDashboard = () => {
         <div className={styles.detailedBox}>
           <MyCalendar />
         </div>
-        <div className={styles.detailedBox}>
-          <NewsFeed />
-        </div>
+        <div className={styles.detailedBox}></div>
         <div className={styles.detailedBox}>
           <div className={styles.nestedClock}>
             <MyClock />
@@ -37,7 +36,9 @@ export const DetailedDashboard = () => {
         <div className={styles.detailedBox}>
           <Quote />
         </div>
-        <div className={styles.detailedBox}></div>
+        <div className={styles.detailedBox}>
+          <OnThisDay />
+        </div>
       </div>
       <ControlBar />
     </>

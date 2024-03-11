@@ -14,13 +14,15 @@ export const TimeDayDate = ({ eyfs }) => {
   //get the time for the clock
   const time = moment().format("h:mm:ss a");
 
-  console.log(time);
-
-  console.log(dateinfo);
-
   return (
     <div className={styles.dateContainer}>
-      {eyfs ? <p>Today is {day}</p> : <h1>Today is {dateinfo}</h1>}
+      {eyfs ? (
+        <p className={styles.eyfsDay}>
+          Today is <span style={{ color: "red" }}>{day}</span>
+        </p>
+      ) : (
+        <h1>Today is {dateinfo}</h1>
+      )}
     </div>
   );
 };

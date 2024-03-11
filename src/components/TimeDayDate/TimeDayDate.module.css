@@ -1,3 +1,7 @@
 .dateContainer h1 {
   font-size: 60px;
 }
+
+.dateContainer p {
+  font-size: 40px;
+}
