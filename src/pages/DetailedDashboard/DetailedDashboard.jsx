@@ -20,8 +20,12 @@ export const DetailedDashboard = () => {
           <Weather />
         </div>
         <div className={styles.detailedBox}>
-          <MyClock />
+          <div className={styles.nestedClock}>
+            <MyClock />
+          </div>
+          <div className={styles.info}>what</div>
         </div>
+
         <div className={styles.detailedBox}>
           map, quote, weather? calendar, trait of the day? idiom of the day??
           quote of the day? on this day?

@@ -39,10 +39,8 @@ export const Weather = () => {
   }, []);
 
   //----using users' lat and long fetch weather data from n----//
-  console.log(userLat);
   const currentWeather = `${BASE_URL}?lat=${userLat}&lon=${userLong}&units=metric&APPID=${API_KEY}`;
 
-  console.log(currentWeather);
   useEffect(() => {
     const fetchWeather = async () => {
       try {
@@ -60,12 +58,11 @@ export const Weather = () => {
     fetchWeather();
   }, [currentWeather]);
 
-  console.log(weatherForLocation);
   const currentTemp = weatherForLocation.main
-    ? weatherForLocation.main.temp
+    ? Math.round(weatherForLocation.main.temp)
     : "N/A";
   const currentFeelsLike = weatherForLocation.main
-    ? weatherForLocation.main.feels_like
+    ? Math.round(weatherForLocation.main.feels_like)
     : "N/A";
 
   const weatherMain = weatherForLocation.weather

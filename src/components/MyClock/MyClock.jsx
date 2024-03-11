@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
 
+import styles from "./MyClock.module.css";
+
 export const MyClock = () => {
   const [date, setDate] = useState(new Date());
 
@@ -11,5 +13,5 @@ export const MyClock = () => {
     return () => clearInterval(intervalId);
   }, []);
 
-  return <p className="clock">{date.toLocaleTimeString()}</p>;
+  return <p className={styles.clock}>{date.toLocaleTimeString()}</p>;
 };

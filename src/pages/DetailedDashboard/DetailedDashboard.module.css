@@ -9,7 +9,7 @@
   height: calc(95vh - 5em);
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 1em; /* Add gap between grid items */
+  grid-gap: 0.5em;
 }
 
 .detailedBox {
@@ -23,4 +23,10 @@
 
 .detailedContainer > :nth-child(3n) {
   margin-right: 0; /* Remove right margin for every third item */
+}
+
+.nestedClock {
+  border: 1px solid green;
+  border-radius: 10px;
+  padding: 0;
 }
