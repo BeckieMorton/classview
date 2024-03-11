@@ -4,10 +4,9 @@ import { MyClock } from "../../components/MyClock/MyClock";
 import { Quote } from "../../components/Quote/Quote";
 import { TimeDayDate } from "../../components/TimeDayDate/TimeDayDate";
 import { Weather } from "../../components/Weather/Weather";
-import { NewsFeed } from "../../components/NewsFeed/NewsFeed";
+import { OnThisDay } from "../../components/OnThisDay/OnThisDay";
 
 import styles from "./DetailedDashboard.module.css";
-import { OnThisDay } from "../../components/OnThisDay/OnThisDay";
 
 export const DetailedDashboard = () => {
   return (
@@ -19,13 +18,15 @@ export const DetailedDashboard = () => {
         <div className={styles.detailedBox}>
           <MyCalendar />
         </div>
-        <div className={styles.detailedBox}></div>
+        <div className={styles.detailedBox}>
+          <Weather />
+        </div>
         <div className={styles.detailedBox}>
           <div className={styles.nestedClock}>
             <MyClock />
           </div>
           <div className={styles.info}>
-            <Weather />
+            <OnThisDay />
           </div>
         </div>
 
@@ -36,9 +37,7 @@ export const DetailedDashboard = () => {
         <div className={styles.detailedBox}>
           <Quote />
         </div>
-        <div className={styles.detailedBox}>
-          <OnThisDay />
-        </div>
+        <div className={styles.detailedBox}>something here</div>
       </div>
       <ControlBar />
     </>
