@@ -5,6 +5,8 @@ import { EyfsDashboard } from "../pages/EyfsDashboard/EyfsDashboard";
 import { DetailedDashboard } from "../pages/DetailedDashboard/DetailedDashboard";
 import { CreateDashboard } from "../pages/CreateDashboard/CreateDashboard";
 import { CreateLesson } from "../pages/CreateLesson/CreateLesson";
+import { LiteracyDashboard } from "../pages/LiteracyDashboard/LiteracyDashboard";
+import { MathsDashboard } from "../pages/MathsDashboard/MathsDashboard";
 
 const routes = (
   <>
@@ -14,6 +16,8 @@ const routes = (
     <Route path="/DetailedDashboard" element={<DetailedDashboard />} />
     <Route path="/CreateDashboard" element={<CreateDashboard />} />
     <Route path="/CreateLesson" element={<CreateLesson />} />
+    <Route path="/LiteracyDashboard" element={<LiteracyDashboard />} />
+    <Route path="/MathsDashboard" element={<MathsDashboard />} />
   </>
 );
 

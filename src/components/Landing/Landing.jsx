@@ -32,6 +32,14 @@ export const Landing = () => {
           routeLocation={"CreateLesson"}
           textGoesHere={"CREATE your own lesson"}
         />
+        <Button
+          routeLocation={"LiteracyDashboard"}
+          textGoesHere={"Generic literacy displays (EYFS, Primary, High)"}
+        />
+        <Button
+          routeLocation={"MathsDashboard"}
+          textGoesHere={"Generic math displays (EYFS, Primary, High)"}
+        />
       </div>
       <div className={styles.landingBox}>
         <BookAnimation />
