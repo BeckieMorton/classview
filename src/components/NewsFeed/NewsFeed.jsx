@@ -1,7 +1,12 @@
+import React, { useState, useEffect } from "react";
+
 export const NewsFeed = () => {
-  return (
-    <div>
-      <h1>Latest News</h1>
-    </div>
-  );
+  const RSS_URL = `https://feeds.bbci.co.uk/news/world/rss.xml`;
+
+  fetch(RSS_URL)
+    .then((response) => response.text())
+    .then((str) => new window.DOMParser().parseFromString(str, "text/xml"))
+    .then((data) => console.log(data));
+
+  return <div>NewsFeed</div>;
 };

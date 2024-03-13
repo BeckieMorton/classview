@@ -17,9 +17,14 @@ export const TimeDayDate = ({ eyfs }) => {
   return (
     <div className={styles.dateContainer}>
       {eyfs ? (
-        <p className={styles.eyfsDay}>
-          Today is <span style={{ color: "red" }}>{day}</span>
-        </p>
+        <div>
+          <p className={styles.eyfsDay}>
+            Today is <span style={{ color: "red" }}>{day}.</span>
+          </p>
+          <p className={styles.eyfsDay}>
+            The month is <span style={{ color: "red" }}>{month}.</span>
+          </p>
+        </div>
       ) : (
         <h1>Today is {dateinfo}</h1>
       )}

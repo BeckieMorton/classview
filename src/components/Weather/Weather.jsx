@@ -105,11 +105,11 @@ export const Weather = ({ eyfs }) => {
       {eyfs ? (
         <div>
           <p>The weather is</p>
-          <p>{weatherImage}</p>
+          {weatherImage}
         </div>
       ) : (
         <div>
-          <p>{weatherImage}</p>
+          {weatherImage}
           <h2>{currentTemp}°C</h2>
           <p>Feels like: {currentFeelsLike}</p>
           <h2>{weatherDesc}</h2>

@@ -3,9 +3,11 @@ import { useState, useEffect } from "react";
 
 export const OnThisDay = () => {
   const [dayFact, setDayFact] = useState("");
-  const onthisdayAPI = "http://numbersapi.com/3/11/date?json";
+  // On this day API = "http://numbersapi.com/3/11/date?json";
   const monthNumber = moment().month() + 1;
-  const dayNumber = moment().day();
+  const dayNumber = moment().date();
+
+  const onthisdayAPI = `http://numbersapi.com/${monthNumber}/${dayNumber}/date?json`;
 
   useEffect(() => {
     const fetchQuote = async () => {
@@ -22,9 +24,6 @@ export const OnThisDay = () => {
     };
 
     fetchQuote();
-    if (dayFact !== "") {
-      console.log(dayFact);
-    }
   }, []);
 
   return (

@@ -23,7 +23,7 @@ export const EyfsDashboard = () => {
         <div className={styles.eyfsBox}>
           Simple - EYFS - simple/clean desktop display for the day includes
           pictures, numbers, words, shapes etc, perhaps lottie animations for
-          numbers? feelings????
+          numbers? feelings???? vegetable of the day?
         </div>
         <div className={styles.eyfsBox}>testing</div>
         <div className={styles.eyfsBox}>

@@ -7,6 +7,7 @@ import { CreateDashboard } from "../pages/CreateDashboard/CreateDashboard";
 import { CreateLesson } from "../pages/CreateLesson/CreateLesson";
 import { LiteracyDashboard } from "../pages/LiteracyDashboard/LiteracyDashboard";
 import { MathsDashboard } from "../pages/MathsDashboard/MathsDashboard";
+import { HighDashboard } from "../pages/HighDashboard/HighDashboard";
 
 const routes = (
   <>
@@ -14,6 +15,7 @@ const routes = (
     <Route path="/SimpleDashboard" element={<SimpleDashboard />} />
     <Route path="/EyfsDashboard" element={<EyfsDashboard />} />
     <Route path="/DetailedDashboard" element={<DetailedDashboard />} />
+    <Route path="/HighDashboard" element={<HighDashboard />} />
     <Route path="/CreateDashboard" element={<CreateDashboard />} />
     <Route path="/CreateLesson" element={<CreateLesson />} />
     <Route path="/LiteracyDashboard" element={<LiteracyDashboard />} />

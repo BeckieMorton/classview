@@ -10,7 +10,7 @@ export const CreateDashboard = () => {
       <p>
         Create - Create your own custom display - STILL TO COME - daily
         checklist? dates to remember, timetable? weekly checklist? will need a
-        login for this section? or a one off??
+        login for this section? or a one off?? eyfs: what are we doing today?
       </p>
 
       <Button routeLocation={""} textGoesHere={"Home"} />

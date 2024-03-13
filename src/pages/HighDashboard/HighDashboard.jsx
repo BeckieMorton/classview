@@ -6,9 +6,10 @@ import { TimeDayDate } from "../../components/TimeDayDate/TimeDayDate";
 import { Weather } from "../../components/Weather/Weather";
 import { OnThisDay } from "../../components/OnThisDay/OnThisDay";
 
-import styles from "./DetailedDashboard.module.css";
+import styles from "./HighDashboard.module.css";
+import { TrueOrFalse } from "../../components/TrueOrFalse/TrueOrFalse";
 
-export const DetailedDashboard = () => {
+export const HighDashboard = () => {
   return (
     <>
       <div className={styles.detailedContainer}>
@@ -29,11 +30,10 @@ export const DetailedDashboard = () => {
             <Weather />
           </div>
         </div>
-
         <div className={styles.detailedBox}>
-          map, quote, weather? calendar, trait of the day? idiom of the day??
-          quote of the day? on this day?
+          <TrueOrFalse />
         </div>
+        <div className={styles.detailedBox}>high school - news</div>
         <div className={styles.detailedBox}>
           <Quote />
         </div>

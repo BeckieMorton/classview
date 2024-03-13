@@ -25,6 +25,10 @@ export const Landing = () => {
           textGoesHere={"Detailed display"}
         />
         <Button
+          routeLocation={"HighDashboard"}
+          textGoesHere={"High School General display"}
+        />
+        <Button
           routeLocation={"CreateDashboard"}
           textGoesHere={"CREATE your own"}
         />

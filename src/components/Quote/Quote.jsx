@@ -26,7 +26,6 @@ export const Quote = () => {
 
   return (
     <div>
-      <p>Quote</p>
       {dayQuote ? (
         <div>
           <p>{dayQuote[0].content}</p>
