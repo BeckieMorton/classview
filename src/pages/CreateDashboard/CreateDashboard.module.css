@@ -11,3 +11,9 @@
 .heading {
   font-size: 90px;
 }
+
+.formContainer {
+  border: 1px solid #ffb500;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
