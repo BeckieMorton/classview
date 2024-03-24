@@ -26,7 +26,7 @@ export const TimeDayDate = ({ eyfs }) => {
           </p>
         </div>
       ) : (
-        <h1>Today is {dateinfo}</h1>
+        <h1>{dateinfo}</h1>
       )}
     </div>
   );

@@ -13,9 +13,15 @@ export const SimpleDashboard = () => {
     <>
       <div className={styles.simpleContainer}>
         <TimeDayDate />
-        <h1>Simple Dashboard</h1>
-        <p>The my clock component is below:</p>
-        <MyClock />
+        <div className={styles.simpleBox}>
+          <MyClock />
+        </div>
+        <div className={styles.simpleBox}>
+          <MyClock />
+        </div>
+        <div className={styles.simpleBox}>
+          <MyClock />
+        </div>
         <OnThisDay />
         <NewsFeed />
       </div>

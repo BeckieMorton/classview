@@ -37,6 +37,7 @@ export const DetailedDashboard = () => {
         <div className={styles.detailedBox}>
           <Quote />
         </div>
+        <div className={styles.detailedBox}>something here</div>
       </div>
       <ControlBar />
     </>
