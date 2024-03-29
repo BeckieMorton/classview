@@ -19,10 +19,10 @@ export const TimeDayDate = ({ eyfs }) => {
       {eyfs ? (
         <div>
           <p className={styles.eyfsDay}>
-            Today is <span style={{ color: "red" }}>{day}.</span>
+            Today is <span style={{ color: "#ffb500" }}>{day}.</span>
           </p>
           <p className={styles.eyfsDay}>
-            The month is <span style={{ color: "red" }}>{month}.</span>
+            The month is <span style={{ color: "#ffb500" }}>{month}.</span>
           </p>
         </div>
       ) : (

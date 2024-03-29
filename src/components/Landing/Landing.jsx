@@ -15,35 +15,40 @@ export const Landing = () => {
           A simple and clean way to display relevant information on your board
           for routine, lessons. Use ClassView as your go to board display.
         </p>
-        <Button
-          routeLocation={"SimpleDashboard"}
-          textGoesHere={"Simple display"}
-        />
-        <Button routeLocation={"EyfsDashboard"} textGoesHere={"Simple EYFS"} />
-        <Button
-          routeLocation={"DetailedDashboard"}
-          textGoesHere={"Detailed display"}
-        />
-        <Button
-          routeLocation={"HighDashboard"}
-          textGoesHere={"High School General display"}
-        />
-        <Button
-          routeLocation={"CreateDashboard"}
-          textGoesHere={"CREATE your own"}
-        />
-        <Button
-          routeLocation={"CreateLesson"}
-          textGoesHere={"CREATE your own lesson"}
-        />
-        <Button
-          routeLocation={"LiteracyDashboard"}
-          textGoesHere={"Generic literacy displays (EYFS, Primary, High)"}
-        />
-        <Button
-          routeLocation={"MathsDashboard"}
-          textGoesHere={"Generic math displays (EYFS, Primary, High)"}
-        />
+        <div className={styles.buttonContainer}>
+          <Button
+            routeLocation={"SimpleDashboard"}
+            textGoesHere={"Simple display"}
+          />
+          <Button
+            routeLocation={"EyfsDashboard"}
+            textGoesHere={"Simple EYFS"}
+          />
+          <Button
+            routeLocation={"DetailedDashboard"}
+            textGoesHere={"Detailed display"}
+          />
+          <Button
+            routeLocation={"HighDashboard"}
+            textGoesHere={"High School General display"}
+          />
+          <Button
+            routeLocation={"CreateDashboard"}
+            textGoesHere={"CREATE your own"}
+          />
+          <Button
+            routeLocation={"CreateLesson"}
+            textGoesHere={"CREATE your own lesson"}
+          />
+          <Button
+            routeLocation={"LiteracyDashboard"}
+            textGoesHere={"Generic literacy displays (EYFS, Primary, High)"}
+          />
+          <Button
+            routeLocation={"MathsDashboard"}
+            textGoesHere={"Generic math displays (EYFS, Primary, High)"}
+          />
+        </div>
       </div>
       <div className={styles.landingBox}>
         <BookAnimation />

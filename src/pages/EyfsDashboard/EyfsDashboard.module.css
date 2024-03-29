@@ -18,7 +18,8 @@
 }
 
 .eyfsBox {
-  border: 1px solid red;
+  border: 1px solid #afcbd9;
+  border-radius: 30px;
   height: 100%; /* Ensure grid items fill the entire height of their container */
 }
 

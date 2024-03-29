@@ -1,0 +1,29 @@
+/* Media query for mobile */
+@media screen and (max-width: 666px) {
+  .mobileContainer {
+    display: block;
+  }
+
+  .desktopContainer {
+    display: none;
+  }
+
+  .mobileText {
+    padding: 2em;
+    text-align: center;
+  }
+}
+
+/* Media query for tablet */
+@media screen and (min-width: 667px) and (max-width: 1023px) {
+  .mobileContainer {
+    display: none;
+  }
+}
+
+/* media query for desktop */
+@media screen and (min-width: 1024px) {
+  .mobileContainer {
+    display: none;
+  }
+}

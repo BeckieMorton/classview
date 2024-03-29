@@ -100,12 +100,15 @@ export const Weather = ({ eyfs }) => {
       break;
   }
 
+  console.log(weatherForLocation);
+
   return (
     <div>
       {eyfs ? (
         <div>
           <p>The weather is</p>
           {weatherImage}
+          {weatherMain}
         </div>
       ) : (
         <div>
