@@ -38,7 +38,7 @@ export const Landing = () => {
           />
           <Button
             routeLocation={"CreateLesson"}
-            textGoesHere={"CREATE your own lesson"}
+            textGoesHere={"CREATE your own lesson, subject specific"}
           />
           <Button
             routeLocation={"LiteracyDashboard"}
@@ -47,6 +47,10 @@ export const Landing = () => {
           <Button
             routeLocation={"MathsDashboard"}
             textGoesHere={"Generic math displays (EYFS, Primary, High)"}
+          />
+          <Button
+            routeLocation={"ScienceDashboard"}
+            textGoesHere={"Generic science displays (EYFS, Primary, High)"}
           />
         </div>
       </div>

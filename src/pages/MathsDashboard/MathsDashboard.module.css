@@ -1,0 +1,20 @@
+.mathsContainer {
+  text-align: center;
+  align-items: center;
+  color: black;
+  background-color: #f6f6f6;
+  margin: 0.5em;
+  padding: 1em;
+  border-radius: 10px;
+  height: calc(95vh - 5em);
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.heading {
+  font-size: 90px;
+}
+
+.mathsContainer > :first-child {
+  grid-column: 1 / span 3;
+}
