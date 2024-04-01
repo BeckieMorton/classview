@@ -12,8 +12,16 @@
   font-size: 90px;
 }
 
-.formContainer {
-  border: 1px solid #ffb500;
+.createForms {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+}
+
+.createBox {
+  border: 1px solid #457992;
+  border-radius: 20px;
+}
+
+.createBox:nth-child(2) {
+  grid-row: span 2; /* This will make the 2nd createBox span two rows */
 }

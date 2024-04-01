@@ -1,5 +1,4 @@
 import { ControlBar } from "../../components/ControlBar/ControlBar";
-import { Button } from "../../components/UI/Button/Button";
 
 import styles from "./CreateDashboard.module.css";
 
@@ -11,66 +10,57 @@ export const CreateDashboard = () => {
     <>
       <div className={styles.createContainer}>
         <h1>Create Dashboard</h1>
-        <div className={styles.formContainer}>
-          <form onSubmit={onFormSubmit}>
-            <label>Selct time:</label>
-            <select id="timeSelect">
-              <option value="7:30am">7:30am</option>
-              <option value="8:00am">0:00am</option>
-              <option value="0:30am">0:30am</option>
-            </select>
-            <label>
-              <input name="enter here" />
-            </label>
-            <select id="timeSelect">
-              <option value="7:30am">7:30am</option>
-              <option value="8:00am">0:00am</option>
-              <option value="0:30am">0:30am</option>
-            </select>
-            <label>
-              Schedule:
-              <input name="enter here" />
-            </label>
-            <div className={styles.formBox}>
-              <p>Display options</p>
-              <label>
-                <input type="checkbox" name="displayoptions" value="clock" />
-                Clock
-              </label>
-              <label>
-                <input type="checkbox" name="displayoptions" value="calendar" />
-                Calendar
-              </label>
-              <label>
-                <input type="checkbox" name="displayoptions" value="weather" />
-                Weather
-              </label>
-              <label>
-                <input type="checkbox" name="displayoptions" value="quote" />
-                Daily Quote
-              </label>
-              <label>
-                <input
-                  type="checkbox"
-                  name="displayoptions"
-                  value="onthisday"
-                />
-                On this day
-              </label>
+        <div className={styles.createForms}>
+          <div className={styles.createBox}>
+            <h3>Information</h3>
+            <p>Select date: add date picker input functionality</p>
+            <label>heading</label>
+            <input type="text" value="" placeholder="eg. Year 3's Monday " />
+            <p>
+              Term?
+              <select></select>
+            </p>
+            <p>
+              Week?
+              <select></select>
+            </p>
+          </div>
+          <div className={styles.createBox}>
+            <h3>Daily Schedule/Timetable</h3>
+            <p>testing to see length</p>
+            <p>testing to see length</p>
+            <p>testing to see length</p>
+            <p>testing to see length</p>
+          </div>
+          <div className={styles.createBox}>
+            Customisation
+            <p>colors? add widgets with a radio box? weather? calendar?</p>
+          </div>
+          <div className={styles.createBox}>
+            <h3>Important reminders</h3>
+            <p> eg. Wear P.E close tomorrow</p>
+            <p> hand in your homework TODAY</p>
+            <p> dont forget your permission note for the field trip</p>
+          </div>
 
-              <input type="submit" value="Submit"></input>
-            </div>
-            <div className={styles.formBox}>Reminders?</div>
-            <div className={styles.formBox}>Notes</div>
-          </form>
+          <div className={styles.createBox}>
+            <h3>To Do list</h3>
+            <p>
+              displays bullet points that can be ticked/crossed out when
+              complete
+            </p>
+          </div>
         </div>
 
         <p>
           Create - Create your own custom display - STILL TO COME - daily
           checklist? dates to remember, timetable? weekly checklist? will need a
           login for this section? or a one off?? eyfs: what are we doing today?
+          can have a login to SAVE the displays to use again i nthe future. eg.
+          could make one for each week (paid?)
         </p>
       </div>
+
       <ControlBar />
     </>
   );
