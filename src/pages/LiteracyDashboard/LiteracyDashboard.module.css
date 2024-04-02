@@ -2,19 +2,24 @@
   text-align: center;
   align-items: center;
   color: black;
-  background-color: #f6f6f6;
+  background-color: white;
   margin: 0.5em;
-  padding: 1em;
+  padding: 0.5em;
   border-radius: 10px;
   height: calc(95vh - 5em);
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 0.5em;
 }
 
-.heading {
-  font-size: 90px;
+.literacyBox {
+  border: 1px solid #afcbd9;
+  border-radius: 10px;
+  height: 100%; /* Ensure grid items fill the entire height of their container */
+  align-items: center;
 }
 
 .literacyContainer > :first-child {
   grid-column: 1 / span 3;
+  align-items: center;
 }

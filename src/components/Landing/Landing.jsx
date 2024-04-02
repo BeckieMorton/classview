@@ -52,7 +52,22 @@ export const Landing = () => {
             routeLocation={"ScienceDashboard"}
             textGoesHere={"Generic science displays (EYFS, Primary, High)"}
           />
+          <Button
+            routeLocation={"ResearchPrompts"}
+            textGoesHere={"Research random facts, countries, web quests etc"}
+          />
         </div>
+        <p>
+          another idea is to make one page substitute prompts for casualt
+          teachers to press and display, have various tasks on them., like
+          twinkl's mats, for each subject for each grade, they change daily?
+        </p>
+        <p>another idea is a bookmark manager for teachers, save youtube etc</p>
+        <p>
+          teacher minds - a website ONLY for teachers, not learning, with all my
+          ideas to support teachers (teacerhs minds has class view, class timer,
+          casual/sub page, bookmark manager???)
+        </p>
       </div>
       <div className={styles.landingBox}>
         <BookAnimation />

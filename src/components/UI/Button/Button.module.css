@@ -1,17 +1,15 @@
 .container {
   text-align: left;
   display: flex;
+  margin-top: 1em;
+  align-items: center;
+  justify-content: center;
 }
 
 .container a {
   text-decoration: none;
   color: white;
 }
-
-/* .container a:hover {
-  background-color: #ffb500;
-  color: white;
-} */
 
 .homeLink {
   background-color: #457992;
@@ -26,7 +24,7 @@
 }
 
 .container span:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
   background-color: #ffb500;
   color: white;
 }

@@ -37,13 +37,13 @@ export const CreateDashboard = () => {
               what are we doing today? can have a login to SAVE the displays to
               use again i nthe future. eg. could make one for each week (paid?)
             </p>
-            <p>
+            <div className={styles.buttonContainer}>
               <Button
                 routeLocation={"finisheddisplaygoeshere"}
                 textGoesHere={"Finish"}
               />
-              <button>Reset</button>
-            </p>
+              <Button routeLocation={"onRest"} textGoesHere={"Reset"} />
+            </div>
           </div>
           <div className={styles.createBox}>
             <h3>Customisation</h3>

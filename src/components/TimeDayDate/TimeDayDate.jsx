@@ -2,7 +2,7 @@ import moment from "moment";
 
 import styles from "./TimeDayDate.module.css";
 
-export const TimeDayDate = ({ eyfs }) => {
+export const TimeDayDate = ({ eyfs, subject }) => {
   //get the full date
   const dateinfo =
     moment().format("dddd") + " " + moment().format("Do MMMM YYYY");
@@ -10,7 +10,6 @@ export const TimeDayDate = ({ eyfs }) => {
   const day = moment().format("dddd");
   //get the month for EYFS
   const month = moment().format("MMMM");
-
   //get the time for the clock
   const time = moment().format("h:mm:ss a");
 
@@ -26,7 +25,7 @@ export const TimeDayDate = ({ eyfs }) => {
           </p>
         </div>
       ) : (
-        <h1>{dateinfo}</h1>
+        <h1 style={subject ? { fontSize: "24px" } : null}>{dateinfo}</h1>
       )}
     </div>
   );

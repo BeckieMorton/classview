@@ -31,9 +31,12 @@ export const HighDashboard = () => {
           </div>
         </div>
         <div className={styles.detailedBox}>
-          <TrueOrFalse />
+          {/* <TrueOrFalse /> */}NEED TO FIX TRUE AND FALSE QUESTION HERE
         </div>
-        <div className={styles.detailedBox}>high school - news</div>
+        <div className={styles.detailedBox}>
+          <p>NEW API?? can you find a completely free one?</p>
+          <p>empji hub API =- free random emoji of the day????</p>
+        </div>
         <div className={styles.detailedBox}>
           <Quote />
         </div>

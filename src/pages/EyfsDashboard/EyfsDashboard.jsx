@@ -25,7 +25,7 @@ export const EyfsDashboard = () => {
           pictures, numbers, words, shapes etc, perhaps lottie animations for
           numbers? feelings???? vegetable of the day?
         </div>
-        <div className={styles.eyfsBox}>testing</div>
+        <div className={styles.eyfsBox}>zoo animal? free api?</div>
         <div className={styles.eyfsBox}>
           <Emotions />
         </div>

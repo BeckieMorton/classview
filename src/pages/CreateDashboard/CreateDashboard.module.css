@@ -26,3 +26,16 @@
 .createBox:nth-child(2) {
   grid-row: span 2; /* This will make the 2nd createBox span two rows */
 }
+/*styles for reset button which is NOT a regular UI component*/
+
+.createBox button {
+  text-align: left;
+  display: flex;
+}
+
+.buttonContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  text-align: center;
+  align-items: center;
+}

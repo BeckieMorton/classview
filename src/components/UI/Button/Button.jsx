@@ -6,9 +6,7 @@ export const Button = ({ routeLocation, textGoesHere }) => {
   return (
     <div className={styles.container}>
       <Link to={`/${routeLocation}`}>
-        <p>
-          <span className={styles.homeLink}>{textGoesHere}</span>
-        </p>
+        <span className={styles.homeLink}>{textGoesHere}</span>
       </Link>
     </div>
   );

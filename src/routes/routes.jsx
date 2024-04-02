@@ -9,6 +9,7 @@ import { LiteracyDashboard } from "../pages/LiteracyDashboard/LiteracyDashboard"
 import { MathsDashboard } from "../pages/MathsDashboard/MathsDashboard";
 import { HighDashboard } from "../pages/HighDashboard/HighDashboard";
 import { ScienceDashboard } from "../pages/ScienceDashboard/ScienceDashboard";
+import { ResearchPrompts } from "../pages/ResearchPrompts/ResearchPrompts";
 
 const routes = (
   <>
@@ -22,6 +23,7 @@ const routes = (
     <Route path="/LiteracyDashboard" element={<LiteracyDashboard />} />
     <Route path="/MathsDashboard" element={<MathsDashboard />} />
     <Route path="/ScienceDashboard" element={<ScienceDashboard />} />
+    <Route path="/ResearchPrompts" element={<ResearchPrompts />} />
   </>
 );
 
