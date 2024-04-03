@@ -21,7 +21,7 @@ export const SimpleDashboard = () => {
           <MyClock />
         </div>
         <OnThisDay />
-        <NewsFeed />
+        News feed here??
       </div>
       <ControlBar />
     </>

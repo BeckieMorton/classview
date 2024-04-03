@@ -100,8 +100,6 @@ export const Weather = ({ eyfs }) => {
       break;
   }
 
-  console.log(weatherForLocation);
-
   return (
     <div>
       {eyfs ? (
