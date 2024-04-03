@@ -58,10 +58,10 @@ export const TrueOrFalse = () => {
     setDisplayAnswer(!displayAnswer);
   };
 
-  return (
+  return torFQuestion ? (
     <div>
-      <p>True of false?</p>
-      {torFQuestion && <p>torFQuestion.results[0].question</p>}
+      <p>True or false?</p>
+      <p>{torFQuestion.results[0].question}</p>
       <p
         className={displayAnswer ? "styles.display" : "styles.hide"}
         onClick={() => handleClick()}
@@ -69,9 +69,9 @@ export const TrueOrFalse = () => {
         {displayAnswer ? (
           <p>see answer</p>
         ) : (
-          <p> {torFQuestion.results[0].correct_answer}</p>
+          <p>{torFQuestion.results[0].correct_answer}</p>
         )}
       </p>
     </div>
-  );
+  ) : null;
 };

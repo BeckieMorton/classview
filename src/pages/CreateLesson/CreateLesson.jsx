@@ -53,10 +53,8 @@ export const CreateLesson = () => {
             </p>
           </div>
           <div className={styles.createBox}>
-            <h3>Important reminders/dates to remember</h3>
+            <h3>Resources</h3>
             <p> eg. Wear P.E close tomorrow</p>
-            <p> hand in your homework TODAY</p>
-            <p> dont forget your permission note for the field trip</p>
           </div>
 
           <div className={styles.createBox}>
