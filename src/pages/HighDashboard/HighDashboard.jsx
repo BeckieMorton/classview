@@ -5,9 +5,9 @@ import { Quote } from "../../components/Quote/Quote";
 import { TimeDayDate } from "../../components/TimeDayDate/TimeDayDate";
 import { Weather } from "../../components/Weather/Weather";
 import { OnThisDay } from "../../components/OnThisDay/OnThisDay";
+import { TrueOrFalse } from "../../components/TrueOrFalse/TrueOrFalse";
 
 import styles from "./HighDashboard.module.css";
-import { TrueOrFalse } from "../../components/TrueOrFalse/TrueOrFalse";
 
 export const HighDashboard = () => {
   return (
@@ -31,7 +31,7 @@ export const HighDashboard = () => {
           </div>
         </div>
         <div className={styles.detailedBox}>
-          {/* <TrueOrFalse /> */}NEED TO FIX TRUE AND FALSE QUESTION HERE
+          <TrueOrFalse />
         </div>
         <div className={styles.detailedBox}>
           <p>NEW API?? can you find a completely free one?</p>
