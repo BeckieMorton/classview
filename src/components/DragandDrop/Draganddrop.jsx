@@ -1,5 +1,6 @@
 import "./test.css";
 import { useState } from "react";
+import { BasicSetup } from "./BasicSetup";
 
 import {
   DndContext,
@@ -49,14 +50,16 @@ export const Draganddrop = () => {
 
   return (
     <div className="container">
-      <h1>Drag and drop</h1>
+      <h1>Drag and drop - Test 1</h1>
       <DndContext
         sensors={sensors}
         onDragEnd={handleDragEnd}
         collisionDetection={closestCorners}
       >
         <Column tasks={tasks} /> <Input onSubmit={addTask} />
+        {/* <Draggable /> */}
       </DndContext>
+      <BasicSetup />
     </div>
   );
 };
