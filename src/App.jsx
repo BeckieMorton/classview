@@ -1,15 +1,17 @@
 import { BrowserRouter, NavLink, Routes } from "react-router-dom";
 
 import routes from "./routes/routes";
+import { Draganddrop } from "./components/DragandDrop/Draganddrop";
 
 function App() {
   return (
     <>
-      <BrowserRouter>
+      {/* <BrowserRouter>
         <main>
           <Routes>{routes}</Routes>
         </main>
-      </BrowserRouter>
+      </BrowserRouter> */}
+      <Draganddrop />
     </>
   );
 }
