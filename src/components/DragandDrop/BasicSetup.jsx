@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+
+import "./test.css";
 import {
   DndContext,
   KeyboardSensor,
@@ -14,36 +16,33 @@ const defaultCoordinates = {
   y: 0,
 };
 
-const axis = {
-  All: "All",
-  Vertical: "Vertical",
-  Horizontal: "Horizontal",
-};
-
-const DraggableItem = ({
-  axis,
-  label,
-  style,
-  top,
-  left,
-  handle,
-  buttonStyle,
-}) => {
+const DraggableItem = ({ label, style, top, left }) => {
   const { attributes, isDragging, listeners, setNodeRef, transform } =
     useDraggable({
       id: "draggable",
     });
 
+  // Additional styling for border, border radius, and padding
+  const itemStyle = {
+    ...style,
+    position: "absolute",
+    top,
+    left,
+    border: "1px solid black", // 1px black solid border
+    borderRadius: "10px", // border-radius of 10px
+    padding: "10px", // padding of 10px
+    // Apply transform while dragging
+    transform: isDragging
+      ? `translate(${transform.x}px, ${transform.y}px)`
+      : "none",
+    // Ensure smooth transition while dragging
+    transition: isDragging ? "none" : "transform 0.3s ease",
+    zIndex: isDragging ? 9999 : "auto", // Ensure item appears above other elements while dragging
+  };
+
   return (
-    <div
-      ref={setNodeRef}
-      {...attributes}
-      style={{ ...style, position: "absolute", top, left }}
-    >
-      <div {...listeners}>
-        {label}
-        {isDragging && " (dragging)"}
-      </div>
+    <div ref={setNodeRef} {...attributes} style={itemStyle}>
+      <div {...listeners}>{label}</div>
     </div>
   );
 };
