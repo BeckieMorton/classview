@@ -59,7 +59,6 @@ export const Draganddrop = () => {
         <Column tasks={tasks} /> <Input onSubmit={addTask} />
         {/* <Draggable /> */}
       </DndContext>
-      <BasicSetup />
     </div>
   );
 };

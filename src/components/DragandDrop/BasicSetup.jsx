@@ -12,8 +12,8 @@ import {
 } from "@dnd-kit/core";
 
 const defaultCoordinates = {
-  x: 0,
-  y: 0,
+  x: 100,
+  y: 100,
 };
 
 const DraggableItem = ({ label, style, top, left }) => {

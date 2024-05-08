@@ -2,7 +2,8 @@ import { BrowserRouter, NavLink, Routes } from "react-router-dom";
 
 import routes from "./routes/routes";
 
-import { Draganddrop2 } from "./components/DragandDrop/Draganddrop2";
+import { Draganddrop } from "./components/DragandDrop/Draganddrop";
+import Test from "./components/newtest/Test";
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
           <Routes>{routes}</Routes>
         </main>
       </BrowserRouter> */}
-      <Draganddrop2 />
+      <Test />
     </>
   );
 }
