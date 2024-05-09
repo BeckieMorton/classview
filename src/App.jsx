@@ -4,6 +4,7 @@ import routes from "./routes/routes";
 
 import { Draganddrop } from "./components/DragandDrop/Draganddrop";
 import Test from "./components/newtest/Test";
+import { Board } from "./components/newtest/Board";
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
           <Routes>{routes}</Routes>
         </main>
       </BrowserRouter> */}
-      <Test />
+      <Board />
     </>
   );
 }
