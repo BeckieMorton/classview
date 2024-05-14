@@ -2,9 +2,9 @@ import { TimeDayDate } from "../../components/TimeDayDate/TimeDayDate";
 import { ControlBar } from "../../components/ControlBar/ControlBar";
 import { MyClock } from "../../components/MyClock/MyClock";
 import { OnThisDay } from "../../components/OnThisDay/OnThisDay";
-import { NewsFeed } from "../../components/NewsFeed/NewsFeed";
 
 import styles from "./SimpleDashboard.module.css";
+import { Button } from "../../components/UI/Button/Button";
 
 export const SimpleDashboard = () => {
   return (
@@ -15,13 +15,14 @@ export const SimpleDashboard = () => {
           <MyClock />
         </div>
         <div className={styles.simpleBox}>
-          <MyClock />
+          <OnThisDay />
         </div>
         <div className={styles.simpleBox}>
-          <MyClock />
+          <Button
+            routeLocation={"DragandDrop"}
+            textGoesHere={"Drag and Drop"}
+          />
         </div>
-        <OnThisDay />
-        News feed here??
       </div>
       <ControlBar />
     </>

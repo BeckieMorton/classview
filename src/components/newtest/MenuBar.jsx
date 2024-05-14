@@ -1,23 +1,23 @@
-import { useState } from "react";
+import React, { useState } from "react";
 
 import Test from "./Test";
 import "./Test.css";
 
 export const MenuBar = () => {
-  const [showWidget, setShowWidget] = useState(false);
-  const [widgetChosen, setWidgetChosen] = useState("");
+  const [selectedWidgets, setSelectedWidgets] = useState([]);
 
   const handleOnClick = (event) => {
     const value = event.target.value;
-    setShowWidget((show) => !show);
-    setWidgetChosen(value);
+    if (!selectedWidgets.includes(value)) {
+      setSelectedWidgets([...selectedWidgets, value]);
+    } else {
+      setSelectedWidgets(selectedWidgets.filter((widget) => widget !== value));
+    }
   };
-
-  console.log(`widget chosen:`, widgetChosen);
 
   return (
     <div className="menu-bar">
-      <button onClick={handleOnClick} value={"timer"}>
+      <button onClick={handleOnClick} value={"MyClock"}>
         timer
       </button>
       <button onClick={handleOnClick} value={"date"}>
@@ -29,7 +29,9 @@ export const MenuBar = () => {
       <button onClick={handleOnClick} value={"clock"}>
         clock
       </button>
-      {showWidget && <Test widgetChosen={widgetChosen} />}
+      {selectedWidgets.map((widget) => (
+        <Test key={widget} widgetChosen={widget} />
+      ))}
     </div>
   );
 };

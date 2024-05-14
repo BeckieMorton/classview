@@ -5,13 +5,14 @@ import { Drop } from "./Drop";
 import "./Test.css";
 
 export default function Test({ widgetChosen }) {
+  const ComponentRender = widgetChosen;
   const notesData = [
     {
       id: "1",
       widget: widgetChosen,
       position: {
-        x: 100,
-        y: 100,
+        x: Math.floor(Math.random() * window.innerWidth),
+        y: Math.floor(Math.random() * window.innerHeight),
       },
     },
   ];

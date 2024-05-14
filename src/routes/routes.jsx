@@ -10,6 +10,8 @@ import { MathsDashboard } from "../pages/MathsDashboard/MathsDashboard";
 import { HighDashboard } from "../pages/HighDashboard/HighDashboard";
 import { ScienceDashboard } from "../pages/ScienceDashboard/ScienceDashboard";
 import { ResearchPrompts } from "../pages/ResearchPrompts/ResearchPrompts";
+import Test from "../components/newtest/Test";
+import { Board } from "../components/newtest/Board";
 
 const routes = (
   <>
@@ -24,6 +26,7 @@ const routes = (
     <Route path="/MathsDashboard" element={<MathsDashboard />} />
     <Route path="/ScienceDashboard" element={<ScienceDashboard />} />
     <Route path="/ResearchPrompts" element={<ResearchPrompts />} />
+    <Route path="/DragandDrop" element={<Board />} />
   </>
 );
 
