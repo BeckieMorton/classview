@@ -1,5 +1,4 @@
 import React from "react";
-import Test from "./Test";
 import { MenuBar } from "./MenuBar";
 import { ControlBar } from "../ControlBar/ControlBar";
 

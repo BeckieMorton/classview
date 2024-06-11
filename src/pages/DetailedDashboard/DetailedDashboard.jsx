@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import { ControlBar } from "../../components/ControlBar/ControlBar";
 import { MyCalendar } from "../../components/MyCalendar/MyCalendar";
 import { MyClock } from "../../components/MyClock/MyClock";
@@ -6,11 +5,9 @@ import { Quote } from "../../components/Quote/Quote";
 import { TimeDayDate } from "../../components/TimeDayDate/TimeDayDate";
 import { Weather } from "../../components/Weather/Weather";
 import { OnThisDay } from "../../components/OnThisDay/OnThisDay";
-import React, { useState } from "react";
+import { TrueOrFalse } from "../../components/TrueOrFalse/TrueOrFalse";
 
 import styles from "./DetailedDashboard.module.css";
-import { WordcloudComponent } from "../../components/WordCloudComponent/WordcloudComponent";
-import { TrueOrFalse } from "../../components/TrueOrFalse/TrueOrFalse";
 
 export const DetailedDashboard = () => {
   return (

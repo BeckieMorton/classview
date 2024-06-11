@@ -23,6 +23,24 @@ export const SimpleDashboard = () => {
             textGoesHere={"Drag and Drop"}
           />
         </div>
+        <div className={styles.simpleBox}>
+          <Button
+            routeLocation={"DragandDrop"}
+            textGoesHere={"Drag and Drop"}
+          />
+        </div>
+        <div className={styles.simpleBox}>
+          <Button
+            routeLocation={"DragandDrop"}
+            textGoesHere={"Drag and Drop"}
+          />
+        </div>
+        <div className={styles.simpleBox}>
+          <Button
+            routeLocation={"DragandDrop"}
+            textGoesHere={"Drag and Drop"}
+          />
+        </div>
       </div>
       <ControlBar />
     </>

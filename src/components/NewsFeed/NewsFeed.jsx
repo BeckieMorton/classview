@@ -1,5 +1,3 @@
-import React, { useState, useEffect } from "react";
-
 export const NewsFeed = () => {
   const RSS_URL = `https://feeds.bbci.co.uk/news/world/rss.xml`;
 
